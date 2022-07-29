@@ -72,8 +72,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 5px;
-    padding: 52px 0px 0px 0px;
-    flex: 1 1 auto; 
+    padding: 52px 0px 110px 0px;
+     
 }
 
 .header__item{
