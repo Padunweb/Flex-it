@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
     padding: 72px 0px 10px 0px;
     flex: 1 1 auto; 
 }
@@ -129,7 +129,7 @@ color: #FFFFFF;
     font-style: normal;
 font-weight: 700;
 font-size: 96px;
-line-height: 144px;
+line-height: 1.5;
 color: #FFFFFF;
 align-self: center;
 
@@ -139,14 +139,14 @@ animation: text-start 4s ease 0s 1 normal forwards;
     font-style: normal;
 font-weight: 275;
 font-size: 24px;
-line-height: 36px;
+line-height: 1.5;
 text-align: center;
 color: #FFFFFF;
 max-width: 749px;
 flex: 1 1 auto; 
 align-self: center;
 animation: text-start 4s ease 0s 1 normal forwards;
-padding-bottom: 20px;
+padding-bottom: 10px;
 }
 
 .header__button{
