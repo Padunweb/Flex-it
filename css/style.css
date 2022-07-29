@@ -1,0 +1,297 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,regular,500,700&display=swap');
+/* Обнулення стилів */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* за замовчувванням */
+}
+body {
+	line-height: 1;
+    font-family: 'Poppins';
+
+}
+.wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    min-height: 100vh;
+    background: url('../img/TTbg.jpg')  0 0 / cover no-repeat;
+    
+}
+.header__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 15px;
+    box-sizing: content-box;
+}
+.header__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 72px 0px 10px 0px;
+    flex: 1 1 auto; 
+}
+
+.header__item{
+    animation: item-start 4s ease 0s 1 normal forwards;
+}
+@keyframes item-start{
+    0%{
+        
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.2;
+    }
+ 
+    100%{
+        
+        opacity: 1;
+        transform:translateX(0%) ;
+    }
+}
+.header__link{
+    position: relative;
+   
+}
+
+.header__link:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+.header__link:hover:after{
+    opacity: 1;
+}
+
+.header__link {
+    font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+}
+.header__title {
+    text-align: center;
+    font-style: normal;
+font-weight: 700;
+font-size: 96px;
+line-height: 144px;
+color: #FFFFFF;
+align-self: center;
+
+animation: text-start 4s ease 0s 1 normal forwards;
+}
+.header__text {
+    font-style: normal;
+font-weight: 275;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+color: #FFFFFF;
+max-width: 749px;
+flex: 1 1 auto; 
+align-self: center;
+animation: text-start 4s ease 0s 1 normal forwards;
+padding-bottom: 20px;
+}
+
+.header__button{
+    display: inline-block;
+    align-self: center;
+    margin-bottom: 10px;
+    background: #00B43D;
+border: 1px solid #00B43D;
+padding: 16px 71px;
+color: #FFFFFF;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+border-radius: 8px;
+animation: scale 2s linear  0s infinite alternate;
+}
+
+@keyframes scale{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+        transform: scale(105%);
+        box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FEE4E2;
+    }
+}
+@keyframes text-start{
+    0%{
+        opacity: 0;
+        transform: translateY(200%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+.header__button:hover{
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FEE4E2;
+}
+.main{
+    flex: 1 1 auto;
+}
+.arton {
+    background: #272727 url(../img/circle.svg) 48% / 41px  no-repeat;;
+    padding: 30px 0px 15px 0px;
+    text-align: center;
+}
+.arton__text{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 28px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+
+.places {
+   min-height: 100vh;
+    background:  url('../img/TTbg2.jpg') 0 0 / cover no-repeat;
+}
+.plases__container {
+    min-height: 100vh;
+    max-width: 1352px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: content-box;
+}
+.places__title {
+    padding: 126px 0px 0px 0px;
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 60px;
+color: #FFFFFF;
+margin-bottom: 54px;
+}
+.places__cards {
+    display: flex;
+    flex-wrap: wrap;
+margin: 0 -12px 133px;
+row-gap: 24px;
+justify-content: center;
+}
+.places__card {
+  padding: 0px 12px;
+  flex: 0 1 25%;
+  display: flex;
+  align-items: stretch;
+  
+}
+.card-places {
+    background: rgba(88, 88, 88, 0.5);
+    min-width: 280px;
+    padding: 24px;
+    text-align: left;
+    transition: all 0.3s linear 0s;
+}
+.card-places:hover{
+    transform: translateY(-20px);
+}
+.card-places__image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 17px;
+}
+.card-places__header {
+    font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 48px;
+color: #FFFFFF;
+margin-bottom: 6px;
+
+}
+.card-places__text {
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+color: #FFFFFF;
+margin-bottom: 38px;
+}
+.card-places__button-container{
+    text-align: right;
+}
+.card-places__button {
+    font-weight: 500;
+font-size: 12px;
+line-height: 28px;
+background: rgba(78, 78, 78, 0.45);
+border-radius: 8px;
+color: #FFFFFF;
+padding: 6px 17px;
+transition: all 0.3s ease 0s;
+
+}
+.card-places__button:hover{
+    background: rgba(78, 78, 78, 0.75);
+    padding: 8px 19px;
+}
+
+ 
